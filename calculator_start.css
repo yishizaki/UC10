@@ -1,0 +1,25 @@
+.defaultTextBox {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 5px solid #cdcdcd;
+    border-color: forestgreen;
+    background-color: lavender;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: Cooper Black, sans-serif;
+    font-size: 40 px;
+    color: hotpink;
+}
+
+p {
+    color:blue;
+}
+
+body {
+    background-color: lightgreen;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator_start.css">
+    <title>Calcuator Starter App</title>
+    <script src="calculator_start.js"></script>
+</head>
+
+<body>
+    <div class=container>
+    <h1>Calculator App</h1>
+    <form>
+        <p>
+           <input type="text" class="defaultTextBox" id="screen"> </p>
+        <p>
+            <button type="button" class="btn btn-warning btn-md" onclick="allClear()">AC</button>
+            <button type="button" class="btn btn-warning btn-md" onclick="clears()">C</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="storeOperator('/')">/</button>
+            <button type="button" class="btn btn-info btn-md" onclick="percentage()">%</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('7')">7</button>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('8')">8</button>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('9')">9</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="storeOperator('*')">x</button>
+            <button type="button" class="btn btn-info btn-md" onclick="factorial()">!</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('4')">4</button>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('5')">5</button>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('6')">6</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="storeOperator('-')">-</button>
+            <button type="button" class="btn btn-info btn-md" onclick="inverse()">1/x</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('1')">1</button>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('2')">2</button>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('3')">3</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="storeOperator('+')">+</button>
+            <button type="button" class="btn btn-info btn-md" onclick="square()">x^2</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-danger btn-md" onclick="addDigit('0')">0</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="addDecimal()">.</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="changeSign()">+/-</button>
+            <button type="button" class="btn btn-primary btn-md" onclick="calculate()">=</button>
+            <button type="button" class="btn btn-info btn-md" onclick="squareRoot()">&radic;x</button>
+        </p>
+    </form>
+        </div>
+</body>
+
+</html>
