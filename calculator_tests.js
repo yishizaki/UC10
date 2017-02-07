@@ -90,3 +90,10 @@ QUnit.test("Show that it is impossible to divide by zero", function (assert) {
 });
 
 //US9: Bug Alert! As an easily confused user I don't want to be able to type numbers into the screen that causes some of the numbers to disappear off the screen, thus confusing me about what I actually typed.
+QUnit.test("Gives alert for too many numbers and resets to 0", function (assert) {
+    currentInput = '0';
+    addDigit('1111111111111111111111');
+    addDigit();
+    assert.equal(document.getElementById("screen").value, "Too Many Numbers!", "Passed - expected Too Many Numbers!");
+    currentInput = '0';
+});
