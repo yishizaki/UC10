@@ -83,6 +83,8 @@ QUnit.test("Clear the current input, but not the stored procedure", function (as
 //US8: Bug Alert! There is a bug in the calculator app! As a careless user I want to be told that I just tried to divide by zero, which I should be told is not allowed.
 QUnit.test("Show that it is impossible to divide by zero", function (assert) {
     currentInput = '0';
+    addDigit('9');
+    storeOperator('/');
     addDigit('0');
     calculate();
     assert.equal(document.getElementById("screen").value, "Cannot Divide By Zero!", "Passed - expected Cannot Divide By Zero!");
